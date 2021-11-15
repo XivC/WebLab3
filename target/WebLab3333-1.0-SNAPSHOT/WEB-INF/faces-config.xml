@@ -6,15 +6,21 @@
 <navigation-rule>
     <from-view-id>/index.xhtml</from-view-id>
     <navigation-case>
-        <from-outcome>main_page</from-outcome>
+        <from-outcome>mainPage</from-outcome>
         <to-view-id>/shoot.xhtml</to-view-id>
     </navigation-case>
 </navigation-rule>
+
   <managed-bean>
       <managed-bean-name>clockPer7</managed-bean-name>
       <managed-bean-class>com.xivs.WebLab3333.Model.StartPage.ClockBean</managed-bean-class>
       <managed-bean-scope>view</managed-bean-scope>
-
   </managed-bean>
+    <managed-bean>
+        <managed-bean-name>dataForm</managed-bean-name>
+        <managed-bean-class>com.xivs.WebLab3333.Model.MainPage.DataFormController</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+
+    </managed-bean>
     
 </faces-config>

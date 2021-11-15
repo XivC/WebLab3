@@ -1,4 +1,4 @@
-package com.xivs.WebLab3333.Model.StartPage;
+package com.xivs.WebLab3333.StartPage;
 
 import java.io.Serializable;
 import java.text.DateFormat;
