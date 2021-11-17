@@ -10,22 +10,35 @@
         <to-view-id>/shoot.xhtml</to-view-id>
     </navigation-case>
 </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/shoot.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>startPage</from-outcome>
+            <to-view-id>/index.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <managed-bean>
+        <managed-bean-name>canvasController</managed-bean-name>
+        <managed-bean-class>com.xivs.WebLab3333.MainPage.CanvasController</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
 
+    </managed-bean>
   <managed-bean>
       <managed-bean-name>clockPer7</managed-bean-name>
       <managed-bean-class>com.xivs.WebLab3333.StartPage.ClockBean</managed-bean-class>
       <managed-bean-scope>view</managed-bean-scope>
   </managed-bean>
-    <managed-bean>
+    <managed-bean eager = "true">
         <managed-bean-name>dataForm</managed-bean-name>
         <managed-bean-class>com.xivs.WebLab3333.MainPage.DataFormController</managed-bean-class>
         <managed-bean-scope>view</managed-bean-scope>
 
-    </managed-bean>
-    <managed-bean>
+    </managed-bean >
+    <managed-bean eager = "true">
         <managed-bean-name>history</managed-bean-name>
         <managed-bean-class>com.xivs.WebLab3333.MainPage.History</managed-bean-class>
         <managed-bean-scope>session</managed-bean-scope>
+
 
     </managed-bean>
     <managed-bean>

@@ -18,7 +18,7 @@ public class DataFormController {
             this.checkbox_state_mapping.put(i, false);
 
         }
-        this.r = 0;
+        this.r = 0.1;
 
     }
 
@@ -127,6 +127,7 @@ public class DataFormController {
                 value = this.checkbox_value_mapping.get(i);
             }
         }
+
         return value;
     }
 }

@@ -17,20 +17,21 @@
 </h:head>
 
 <h:body>
-    <h:outputText id="student_name" value="Дыбов Артём Денисович"/>
+
+    <h:outputText styleClass="student_name" value="Дыбов Артём Денисович"/>
     <br/>
-    <h:outputText id="student_group" value="Группа P3213"/>
+    <h:outputText styleClass="student_group" value="Группа P3213"/>
     <br/>
-    <h:outputText id="student_variant" value="Вариант 13608"/>
+    <h:outputText styleClass="student_variant" value="Вариант 13608"/>
     <br/>
-    <h:outputText id="clock" value="Текущее время: #{clockPer7.dateTime}"/>
+    <h:outputText id="clock" styleClass="clock" value="Текущее время: #{clockPer7.dateTime}"/>
     <br/>
     <p:poll interval="7" listener="#{clockPer7.updateTime}" update="clock"> </p:poll>
     <br/>
-    <h:form>
-        <h:commandButton id="to_main_page_button" action="mainPage"
+    <h:form styleClass="form">
+        <h:commandButton styleClass="button" id="to_main_page_button" action="mainPage"
                          value="ПОШЛИИИИИ СТРЕЛЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯТЬ"/>
     </h:form>
-
+    <h:outputStylesheet library="css" name="index.css"/>
 </h:body>
 </html>
